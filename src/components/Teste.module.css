@@ -1,0 +1,25 @@
+/* Estilo base da div */
+.box {
+  width: 200px;
+  height: 100px;
+  background-color: #4caf50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Começa invisível */
+  transform: translateY(-20px); /* Move um pouco para cima */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Suaviza a entrada/saída */
+}
+
+/* Classe para mostrar a div */
+.show {
+  opacity: 1; /* Totalmente visível */
+  transform: translateY(0); /* Volta à posição original */
+}
+
+/* Classe para esconder a div */
+.hide {
+  opacity: 0; /* Invisível */
+  transform: translateY(-20px); /* Move para cima */
+}

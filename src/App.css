@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  width: 80%;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .container2 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 398px) {
+  .container2 {
+    width: 90%;
+  }
+}

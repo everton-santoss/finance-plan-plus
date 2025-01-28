@@ -1,0 +1,340 @@
+.container {
+  width: 100%;
+  height: 10vh;
+
+  gap: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.separetor {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1.2rem;
+  border: solid 1px #242424;
+  border-radius: 10px;
+}
+
+.box:hover {
+  background-color: #242428;
+}
+
+.p-results {
+  color: #fff;
+  font-size: 10px;
+}
+
+.buttonAddIns {
+  font-size: 10px;
+  font-weight: 900;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.6rem;
+
+  border: none;
+  border-radius: 10px;
+  color: #242424;
+  background-color: #0ad1e3;
+
+  transition: background 0.2s;
+}
+
+.buttonAddIns:hover {
+  background-color: #97ebf3;
+}
+
+.sessao {
+  margin-top: 0.7rem;
+  justify-content: center;
+}
+
+.boxLi {
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.list {
+  list-style: none;
+}
+
+.sessao li {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #242424;
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+.description {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* modal styles */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.modalOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+
+  background-color: #121214;
+  padding: 1.5rem;
+
+  min-width: 50%;
+  max-width: 70%;
+
+  border: solid 1px #242424;
+
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(235, 103, 103);
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.selects h3 {
+  margin-bottom: 0.5rem;
+}
+
+.modalSelect {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.modalSelect h3 {
+  margin-bottom: 1rem;
+}
+
+.modalSelect label {
+  display: inline-block;
+
+  padding: 0.5rem 1rem;
+  background-color: #121214;
+  color: #ccc;
+  border: solid 1px #242424;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Quando o botão é selecionado */
+input[type="radio"]:checked + label {
+  background-color: #97ebf3;
+  color: white;
+}
+
+/* Efeito hover para o botão */
+label:hover {
+  color: #fff;
+  background-color: #97ebf3;
+}
+
+/*////////////////////*/
+
+.selects {
+  margin-bottom: 1rem;
+}
+
+.valor input {
+  margin-top: 0.5rem;
+  border: 1px solid #242424;
+}
+
+.valor label {
+  margin-bottom: 1rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.labeldim {
+  width: 100%;
+  height: 20%;
+  font-size: 13px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.labeldesc {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.buttonAdd {
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #0ad1e3;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.buttonAdd:hover {
+  background-color: #79d9e2;
+}
+
+.sessao h3 {
+  margin-bottom: 0.5rem;
+}
+
+.sessao p {
+  font-size: 12px;
+  color: #5c5555;
+  font-weight: bold;
+}
+
+.testet {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.removeButton {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.iconstyle {
+  color: #d65858;
+  transition: scale 0.2s;
+}
+.iconstyle:hover {
+  scale: 1.1;
+}
+
+.lissg {
+  color: #0ad1e3;
+  font-weight: 600;
+}
+.lissr {
+  color: #d65858;
+  font-weight: 600;
+}
+
+.noTransaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noTransaction h5 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #5c5555;
+}
+
+/* medias usadas*/
+
+@media (max-width: 658px) {
+  .container {
+    margin-bottom: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .selects {
+    display: block;
+    justify-content: start;
+  }
+
+  .box {
+    display: block;
+  }
+
+  .sessao li {
+    flex: 1;
+    font-size: 10px;
+  }
+
+  .sessao p {
+    font-size: 10px;
+  }
+
+  .sessao img {
+    width: 15px;
+  }
+
+  .iconstyle {
+    width: 15px;
+  }
+
+  .modalContent {
+    display: block;
+  }
+
+  .sessao {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 447px) {
+  .container {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  .container {
+    margin-bottom: 5rem;
+  }
+}
